@@ -1,0 +1,23 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('bulid') {
+            steps {
+                echo 'buliding done'
+                sh "ls"
+            }
+        }
+        stage('test') {
+            steps {
+                echo 'testing done'
+            }
+        }
+        stage('deploy') {
+            steps {
+                echo 'deploying done'
+            }
+        }
+    }
+}
+
