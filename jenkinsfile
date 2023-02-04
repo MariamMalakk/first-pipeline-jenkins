@@ -1,5 +1,5 @@
 pipeline {
-    agent slave-ubuntu
+    agent { label 'slave-ubuntu
 
     stages {
         stage('bulid') {
